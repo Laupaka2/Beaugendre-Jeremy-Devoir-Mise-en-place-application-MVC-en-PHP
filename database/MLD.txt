@@ -1,0 +1,25 @@
+agencies (
+  id INT PK AI,
+  name VARCHAR(100) UNIQUE NOT NULL
+)
+
+users (
+  id INT PK AI,
+  last_name VARCHAR(100) NOT NULL,
+  first_name VARCHAR(100) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  email VARCHAR(150) UNIQUE NOT NULL,
+  password_hash VARCHAR(255) NOT NULL,
+  role ENUM('admin','user') NOT NULL
+)
+
+trips (
+  id INT PK AI,
+  departure_agency_id INT FK -> agencies.id NOT NULL,
+  arrival_agency_id INT FK -> agencies.id NOT NULL,
+  departure_at DATETIME NOT NULL,
+  arrival_at DATETIME NOT NULL,
+  total_seats INT NOT NULL,
+  available_seats INT NOT NULL,
+  user_id INT FK -> users.id NOT NULL
+)

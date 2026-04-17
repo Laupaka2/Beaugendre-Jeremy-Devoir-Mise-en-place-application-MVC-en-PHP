@@ -1,0 +1,91 @@
+:root {
+    --app-bg: #ececee;
+    --app-dark: #2f3742;
+    --app-border: #3f4650;
+}
+
+body {
+    background: var(--app-bg);
+    color: #1f2937;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topbar {
+    background: #f8f9fa;
+    border: 3px solid var(--app-border);
+    border-radius: 22px;
+}
+
+.brand-link {
+    color: #111827;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.topbar .btn-dark {
+    background: #111827;
+    border-color: #111827;
+}
+
+.topbar .btn-admin {
+    background: #6b7280;
+    border-color: #6b7280;
+    color: #ffffff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+}
+
+.message-title {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+}
+
+.flash-neutral {
+    background: #d1d5db;
+    border: 1px solid #bfc4cb;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.trips-table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.trips-table thead th {
+    background: var(--app-dark);
+    color: #ffffff;
+    border-color: #4b5563;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.trips-table tbody td {
+    border-color: #d1d5db;
+    font-size: 1.8rem;
+}
+
+.table-action {
+    min-width: 170px;
+}
+
+.mini-action {
+    font-size: 1rem;
+    padding: 0.28rem 0.45rem;
+    line-height: 1;
+}
+
+footer {
+    color: #374151;
+}
+
+.card,
+.table,
+.modal-content,
+.alert {
+    border-radius: 10px;
+}
